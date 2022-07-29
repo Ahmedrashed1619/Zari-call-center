@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+    <title> Call Center </title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Custome app">
+    <meta name="kaywords" content="Custome app">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta anme="author" content="AHMED RASHED" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Tajawal:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- call center form -->
+
+    <section class="bg-black app-form">
+        <div class="container position-relative py-5">
+            <img src="images/Vector 5.png" class="position-absolute top-0 start-0 ms-2 w-25 vector" alt="vector">
+            <div class="img-zari mb-5">
+                <img src="images/zari s w.png" alt="zari logo">
+            </div>
+            <div class="row gx-0">
+                <div class="col-lg-3 d-flex justify-content-start align-items-center position-relative cont-note">
+                    <div class="note me-4 mt-3">
+                        <img src="images/Group 1.png" alt="note">
+                    </div>
+                    <img src="images/Vector 4.png" class="w-75 position-absolute top-50 start-0 vector" alt="vector">
+                </div>
+                <div class="col-lg-6">
+                    <form >
+                        <div class="inputs-list bg-white ">
+                            <label for="name">الأسم</label>
+                            <input id="name" type="text" name="Name" required class="form-control">
+
+                            <label for="phone">رقم الجوال</label>
+                            <input id="phone" type="tel" name="Phone" required class="form-control">
+
+                            <label for="email">الإيميل</label>
+                            <input id="email" type="email" name="ClientEmail" required class="form-control">
+                            <div id="alertEmail" class="alert alert-danger p-1 text-center mx-auto mt-1 mb-2">الإيميل غير صالح</div>
+
+                            <label for="Activity">نوع النشاط</label>
+                            <input  type="text" name="Activity" id="Activity" required class="form-control">
+
+                            <!-- <input type = "hidden" id = "Activity" name = "Activity" value = "0">
+
+                            <label for="activity">نوع النشاط</label>
+                            <button class="form-control dropdown-toggle mb-4" type="menu" id="activity"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                            </button>
+                            <div class="dropdown-menu p-3" aria-labelledby="activity">
+                                <a class="dropdown-item" onclick = "Activity('كوفي شوب')">كوفي شوب </a>
+                                <a class="dropdown-item" onclick = "Activity('صالون رجالي')">صالون رجالي </a>
+                                <a class="dropdown-item" onclick = "Activity('صالون نسائي')"> صالون نسائي </a>
+                                <a class="dropdown-item" onclick = "Activity('سبا سنتر')">سبا سنتر </a>
+                                <a class="dropdown-item" onclick = "Activity('مركز مساج')">مركز مساج </a>
+                                <a class="dropdown-item" onclick = "Activity('مطعم وكوفي')">مطعم وكوفي </a>
+                                <a class="dropdown-item" onclick = "Activity('محل زهور وهدايا')">محل زهور وهدايا </a>
+                                <a class="dropdown-item" onclick = "Activity('دايت سنتر')">دايت سنتر </a>
+                                <a class="dropdown-item" onclick = "Activity('مغسلة سيارات')">مغسلة سيارات </a>
+                                <a class="dropdown-item" onclick = "Activity('مغسلة ملابس')">مغسلة ملابس </a>
+                                <a class="dropdown-item" onclick = "Activity('صالة العاب ترفيهيه')">صالة العاب ترفيهيه </a>
+                            </div> -->
+                            <p id="alertRegister" class="fs-6 mb-2 mt-3 w-75 text-center mx-auto"></p>
+                            <a id="register" onclick="SubmitForm()" class="btn btn-black form-control text-white text-center py-2 mb-3">أبدأ الآن</a>
+                            <a target="_blank" href="https://wa.me/+966566770235" class="btn btn-cofe form-control text-black text-center py-2">تحدث معنا</a>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-3 d-flex justify-content-end align-items-end position-relative cont-char">
+                    <div class="character">
+                        <img src="images/freepik--Character--inject-936 (1).png" alt="Character">
+                    </div>
+                    <img src="images/Vector 3.png"
+                        class="position-absolute top-50 end-0 vector translate-middle-y vector-pen" alt="vector">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- about zari -->
+    <section class="py-5">
+        <div class="container">
+            <div class="row about position-relative gy-4 gx-0">
+                <img src="images/Vector 6.png" class="position-absolute translate-middle-x vector" alt="vector">
+                <h2 class="fs-1 text-center fw-bold mb-3">عن <span class="main-color">مركز إتصال</span> زاري</h2>
+                <div class="col-lg-7 d-flex justify-content-center align-items-center">
+                    <div class="about-zari">
+                        <p class="m-0 fs-4">تقدم <span class="fw-bold">زاري</span> خدمات <span class="main-color fw-bold">مركز الإتصال</span> لعملك لاستكمال جميع الجوانب الحيوية اللازمة للوصول إلى النجاح ورضا العملاء.</p>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="about-img-service text-center">
+                        <img src="images/Service 24_7-rafiki 1.png" alt="Service">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- how work zari -->
+    <section class="py-5 how-work position-relative">
+        <div class="container">
+            <img src="images/Vector 7.png" class="position-absolute vector" alt="vector">
+            <div class="row gy-4 gx-0">
+                <h2 class="fs-1 text-center fw-bold mb-3">كيف تعمل أنظمة <span class="main-color">مركز إتصال</span> زاري</h2>
+                <div class="col-lg-4">
+                    <div class="about-img text-center">
+                        <img src="images/Call center-bro 1.png" alt="Call center">
+                    </div>
+                </div>
+                <div class="col-lg-8 d-flex justify-content-center align-items-center">
+                    <div class="about-zari">
+                        <p class="m-0 fs-4">تقدم <span class="fw-bold">زاري</span> خدمات <span class="main-color fw-bold">مركز الإتصال</span> لعملك لاستكمال جميع الجوانب الحيوية اللازمة للوصول إلى النجاح ورضا العملاء.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- features -->
+    <section class="pb-5 pt-lg-0 pt-5 features">
+        <div class="container">
+            <h2 class="fs-1 text-center fw-bold mb-5">مميزات نظام <span class="main-color">مركز إتصال</span> زاري</h2>
+            <div class="row reverce gy-5 gx-0">
+                <div class="col-lg-7">
+                    <div class="about-zari">
+                        <div class="row gy-4">
+                            <div class="col-md-6">
+                                <div class="feature d-flex align-items-center">
+                                    <img src="images/rate.png" class="ms-3" alt="rate">
+                                    <h3> زيادة رضا العملاء.</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature d-flex align-items-center">
+                                    <img src="images/sales.png" class="ms-3" alt="sales">
+                                    <h3>  زيادة المبيعات.</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature d-flex align-items-center">
+                                    <img src="images/improve.png" class="ms-3" alt="improve">
+                                    <h3>تحسين وضع الشركة وسط السوق.</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature d-flex align-items-center">
+                                    <img src="images/skill (1).png" class="ms-3" alt="skill">
+                                    <h3>ميزة تنافسية عن المنافسين الحاليين.</h3>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="feature d-flex align-items-center">
+                                    <img src="images/technical-support.png" class="ms-3" alt="technical-support">
+                                    <h3>معرفة شكاوى و إستفسارات العملاء.</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5 d-flex justify-content-center align-items-center">
+                    <div class="about-img text-center">
+                        <img src="images/Investing-bro 1.png" class="w-75" alt="Investing">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- systems -->
+    <section class="py-5 systems">
+        <div class="container">
+            <h2 class="fs-1 text-center fw-bold mb-5">فئات الأنظمة</h2>
+            <div class="row gy-5 gx-4">
+                <div class="col-lg-4">
+                    <div class="choose">
+                        <h3>الفئة الأولي</h3>
+                        <div class="cont-pricing">
+                            <h4>Hardware</h4>
+                            <h4>Software</h4>
+                            <h4 class="through">مقر</h4>
+                            <h4 class="through">موظفين خدمة العملاء</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="choose">
+                        <h3>الفئة الثانية</h3>
+                        <div class="cont-pricing">
+                            <h4>Hardware</h4>
+                            <h4>Software</h4>
+                            <h4>مقر</h4>
+                            <h4 class="through">موظفين خدمة العملاء</h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="choose">
+                        <h3>الفئة الثالثة</h3>
+                        <div class="cont-pricing">
+                            <h4>Hardware</h4>
+                            <h4>Software</h4>
+                            <h4>مقر</h4>
+                            <h4>موظفين خدمة العملاء</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="bg-black pt-5 pb-4">
+        <div class="container">
+            <div class="row gy-5 mb-4">
+                <div class="col-lg-6">
+                    <div class="info">
+                        <img src="images/zari s w.png" alt="zari logo">
+                        <p class="my-4">زارى هي شركة سعودية ضمن مجموعة شركات تعمل في أكثر من مجال في المملكة العربية السعودية والشرق الأوسط.</p>
+                        <div class="icons d-flex align-items-center">
+                            <a target="_blank" href="https://www.facebook.com/ZARISolutionksa"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a target="_blank" href="https://twitter.com/SolutionZari"><i class="fa-brands fa-twitter"></i></a>
+                            <a target="_blank" href="https://wa.me/+966566770235"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a target="_blank" href="https://www.linkedin.com/in/zari-solution-ksa-12717623b/"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a target="_blank" href="https://www.instagram.com/zarisolutionksa/"><i class="fa-brands fa-instagram"></i></a>
+                            <a target="_blank" href="https://www.tiktok.com/@zarisolutionksa"><img src="images/tik-tok.png" alt="tik-tok"></a>
+                            <a target="_blank" href="https://www.snapchat.com/add/zari_solutions?share_id=osFpGeXWnlE&locale=en-US"><img src="images/snapchat.png" alt="snapchat"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="conect text-white">
+                        <h2 class="mb-4">تواصل معنا</h2>
+                        <div class="links-navigate d-flex justify-content-center flex-column">
+                            <div class="d-flex justify-content-start align-items-center mb-3">
+                                <span><i class="fa-solid fa-location-dot"></i></span>
+                                <p class="mb-0 lh-sm"> 7865 طريق الملك عبدالله بن عبد العزيز-جشم-المدينة المنورة-المملكة العربية السعودية.</p>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center mb-3">
+                                <span><i class="fa-solid fa-phone"></i></span>
+                                <a dir="ltr" target="_blank" href="tel:+966 92 002 4403"> +966 92 002 4403</a>
+                            </div>
+                            <div class="d-flex justify-content-start align-items-center">
+                                <span><i class="fa-solid fa-envelope"></i></span>
+                                <a target="_blank" href="https://info@zarisolution.com/"> info@zarisolution.com</a>
+                            </div>
+                        </div>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr class="text-light">
+        <div class="container">
+            <h6 class="text-muted text-center">كافة الحقوق محفوظة ل Zari <span id="year"></span></h6>
+        </div>
+    </footer>
+
+    <!-- js files -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
